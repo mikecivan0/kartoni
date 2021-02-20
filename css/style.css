@@ -1,0 +1,614 @@
+﻿@font-face {
+	font-family: dynalight;
+	src: url('../fonts/Dynalight-Regular.otf');
+}
+
+@font-face {
+	font-family: icon;
+	src: url('../fonts/Pe-icon-7-stroke.woff');
+}
+.polje {
+	font-family: dynalight;
+	position: absolute;
+	font-size: 1.3 rem;
+}
+p {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+.naslovniPanel {
+	margin-top: 20px;
+}
+
+.font {
+	font-family: dynalight;
+}
+
+.pozadinaManual{ 
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.gitLink{
+	width: 120px;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+ 
+.linkedInLink{
+	width: 120px;
+	height: 30px;
+	margin-top: 17px;
+	margin-left: 15px;
+	float: left;
+}
+ 
+.center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.fontArial {
+	font-family: "Arial Unicode MS", serif;
+}
+
+.odabirRadaBezBaze a img:hover {
+	transition: border-color 1s ease;
+	border: #dd0000 3px solid;
+	border-radius: 20px;
+}
+
+.odabirRadaSaBazom a img:hover {
+	transition: border-color 1s ease;
+	border: #0000ff 3px solid;
+	border-radius: 20px;
+}
+
+.objasnjenje li {
+	list-style-type: none;
+	font-family: "Georgia", Times, sans-serif;
+}
+
+.large-block-grid-1 .panel {
+	background-color: white;
+}
+
+.large-block-grid-1 .panel:hover {
+	border: #0000ff 2px solid;
+	transition: border-color 1s ease;
+	border-color: #0000ff;
+}
+
+.vjezbe {
+	background: url(../img/vjezbe.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.fleft {
+	float: left;
+}
+
+.siroko {
+	width: 100% !important;
+}
+
+.loging {
+	font-size: 26px;
+	border-top: 2px #258faf solid;
+	border-bottom: 2px #258faf solid;
+	float: right;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.footer {
+	bottom: 0;
+    position: fixed;
+    width: 165px;
+    font-size: 0.6rem;
+}
+
+/*omogućava da se forma stopi sa pozadinom*/
+.polja {
+	background-color: #ebebe0;
+	opacity: 0.85;
+}
+
+/*selektiraj sve inpute u .polja osim inputa tipa submit*/
+.polja input:not([type="submit"]), .polja select {
+	height: 1.8 rem !important;
+}
+
+/*selektiraj sve inpute tipa number u .polja*/
+.polja input[type="number"], .polja select {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.printanje div {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	position: absolute;
+}
+
+.pt0 {
+	padding-top: 0px !important;
+}
+
+.p0 {
+	padding: 0px !important;
+}
+
+.plr0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.mt10 {
+	margin-top: 10% !important;
+}
+
+.mt20 {
+	margin-top: 20px !important;
+}
+
+.mt30 {
+	margin-top: 30px !important;
+}
+
+.mt15 {
+	margin-top: 15px !important;
+}
+
+.mt40 {
+	margin-top: 40px !important;
+}
+
+.mt80 {
+	margin-top: 80px !important;
+}
+
+.pt15 {
+	padding-top: 15px !important;
+}
+
+.pt22 {
+	padding-top: 22px !important;
+}
+
+.pt25 {
+	padding-top: 25px !important;
+}
+
+.pt40 {
+	padding-top: 40px !important;
+}
+
+.pt60 {
+	padding-top: 60px !important;
+}
+
+.pt80 {
+	padding-top: 80px !important;
+}
+
+.pb40 {
+	padding-bottom: 40px !important;
+}
+
+.pb5 {
+	padding-bottom: 5px !important;
+}
+
+.pl75 {
+	padding-left: 75px !important;
+}
+
+.plr35 {
+	padding-left: 35px !important;
+	padding-right: 35px !important;
+}
+
+
+.mb0{ 
+	margin-bottom: 0px !important;
+	}
+	
+.mb5{ 
+	margin-bottom: 5px !important;
+	}
+	
+.mb40 {
+	margin-bottom: 40px !important;
+}
+
+.mr5{ 
+	margin-right: 5px !important;
+}
+
+.mb15 {
+	margin-bottom: 15px !important;
+}
+
+.mb25 {
+	margin-bottom: 25px !important;
+}
+
+.mb20 {
+	margin-bottom: 20px !important;
+}
+
+.mb100 {
+	margin-bottom: 100px !important;
+}
+
+.ml15{ 
+	margin-left: 15px !important;	
+}
+	
+.ml35 {
+	margin-left: 35px !important;
+}
+
+.sredina {
+	margin: 0 auto;
+}
+
+.sredina {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h45 {
+	height: 45px;
+}
+
+.h49 {
+	height: 49px;
+}
+
+.h64 {
+	height: 64px !important;
+}
+
+.h30 {
+	height: 30px;
+}
+
+.lh100 {
+	line-height: 100px;
+}
+
+table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+	line-height: 1rem !important;
+}
+
+.razmak {
+	word-spacing: 10px;
+}
+
+.crnaPozadina {
+	background: black;
+}
+
+button.secondary, .button.secondary {
+	background-color: #8C9198;
+}
+
+input[type="text"], select:not(.ui-datepicker-year), legend, input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"] {
+	height: 2rem !important;
+	border-radius: 10px;
+}
+
+textarea{
+	border-radius: 10px;
+}
+
+legend {
+	line-height: 2rem !important;
+}
+
+select:not(.ui-datepicker-year), {
+	height: 33px !important;
+}
+
+.sivo {
+	background: gray;
+}
+
+.promjenaOvlasti, .spremi, .uredjivanjeFilijala {
+	height: 33px;
+	padding-top: 10px;
+	margin-top: 21px;
+	line-height: normal;
+}
+
+button.round, .button.round, input[type="submit"], input[type="button"], button, small.error {
+	border-radius: 10px !important;
+}
+
+fieldset legend {
+	padding: 0px 1rem;
+}
+
+.settings {
+	padding-top: 7px;
+	padding-right: 7px;
+}
+
+*ikone*/
+.pe-7s-door-lock:before {
+	content: "\e6b0";
+}
+
+.pe-7s-power:before {
+	content: "\e621";
+}
+
+.pe-7s-home:before {
+	content: "\e648";
+}
+
+.pe-7s-back:before {
+	content: "\e67a";
+	color: black !important;
+}
+
+.pe-7s-back-white:before {
+	content: "\e67a";
+	color: white !important;
+}
+
+a[class*="pe-7s"]:before, a[class*="pe-7s"]:hover {
+	font-family: icon;
+	font-size: 32px;
+	text-decoration: none;
+}
+
+#printImg, #previewImg, #saveImg{
+	width: 64px;
+	height: 64px;
+}
+
+#deleteImg{
+	width: 72px;
+	height: 68px;
+}
+
+.caption *{ 	
+	cursor: hand;
+	}
+/*ikone end*/
+
+/*caption na ikonama za print i preview*/
+p.caption {
+	display: block !important;
+	position: relative !important;
+}
+
+p.caption img {
+	position: absolute !important
+}
+
+p.caption span {
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	color: white !important;
+	display: none;
+	padding: 0px !important;
+	text-align: center;
+	position: absolute !important;
+	width: 64px !important;
+}
+
+#deleteSpan {
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	color: white !important;
+	display: none;
+	padding: 0px !important;
+	text-align: center;
+	position: absolute !important;
+	width: 64px !important;
+	margin-left: 4px;
+}
+/*caption end*/
+
+
+/*tabs*/
+.tabs dd.active a, .tabs .tab-title.active a {
+    background-color: transparent !important;
+    text-decoration: underline;
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+    background-color: transparent !important;
+}
+
+.tabs{ 
+	border: 1px solid black;
+	}
+
+.h138{ 
+	height: 138px !important;	
+	padding-top: 55px; 
+	text-decoration: underline;
+	}
+	
+.h140{ 
+	height: 140px !important;
+	} 
+	 
+.h207{ 
+	height: 207px !important;	
+	padding-top: 96px; 
+	text-decoration: underline;
+	}
+
+.pl55{ 
+	padding-left: 55px !important;
+	}
+	
+.pl5{ 
+	padding-left: 5px !important;
+	}
+	
+.pl15{ 
+	padding-left: 15px !important;
+	}
+
+.text_desno{ 
+	text-align: right;
+	}
+	
+.text_lijevo{ 
+	text-align: left;
+	}
+	
+.napomena{
+	color: red;
+	font-size: 0.8rem;
+	 }
+
+.transparent,.transparent:hover{ 
+	background-color: transparent !important;
+	}
+
+.hand,.poruka{ 
+	cursor: pointer !important;
+	}
+	
+.ui-datepicker-year{ 
+	border-radius: 10px;
+	}
+
+.red{ 
+	color: #F55656 !important;
+	}
+	
+.green{ 
+	color: #65D63C !important;
+	}	
+	
+.pozadinaIkone,pozadinaIkone:hover{  
+	background: #333333 !important;
+	}
+
+.objasnjenje{ 
+	color: red;
+	font-size: 0.9rem;
+	}
+	
+.crveniRub{ 
+	border: red 1px solid;
+	}
+
+.top-bar-section .has-dropdown > a.postavke:after {
+   border-style: none !important;
+}
+
+.top-bar-section .has-dropdown > a.postavke {
+     padding-right: 0rem !important; 
+}
+
+.bold{ 
+	font-weight: bold;
+	}
+
+.lsNone{ 
+	list-style: none;
+	}
+
+.white{ 
+	color: white !important;
+	}
+
+.m0{ 
+	margin: 0px !important;
+	}
+	
+.mw60{ 
+	min-width: 60px !important;
+	}
+	
+.mw300{ 
+	min-width: 300px !important;
+	}
+	
+.crnaSlova{ 
+	color: black !important;
+	}
+	
+.plavaSlova{ 
+	color: blue !important;
+	}
+
+.w34{ 
+	width: 34px;
+	}
+
+.w200{ 
+	width: 200px !important;
+	}
+	
+.w190{ 
+	width: 190px !important;
+	}
+	
+.w180{ 
+	width: 180px !important;
+	}
+
+.fs08rem{ 
+	font-size: 0.8rem;
+	}
+	
+.pr0{ 
+	padding-right: 0px !important;
+	}
+	
+.pr10{ 
+	padding-right: 10px !important;
+	}
+
+.alert-box.radius{ 
+	border-radius: 30px !important;
+	}
+
+.tar{ 
+	text-align: right !important;
+	}
+
+.borderRight{ 
+	border-right: black 1px solid !important;
+	}
+
+.bezDonjeCrte,.bezDonjeCrte:hover{ 
+	text-decoration: none !important;
+	}
+	
+.lh1rem{ 
+	line-height: 1rem !important;
+	}
+	
+.lhDetalji{ 
+	line-height: 1.19rem !important;
+	}
+
+.bijelaSlova{
+	color: white !important;
+	}
+
+.izabraniKarton{
+	border: 1px solid black !important;
+	}
+	
+.bijelaPozadina{
+	background-color: white;
+	}

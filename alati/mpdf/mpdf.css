@@ -1,0 +1,178 @@
+.broj {
+	font-size: 0.9rem !important;
+}
+
+.f {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: Arial, sans-serif !important;
+	font-style: italic;
+	font-size: 1rem;
+	position: absolute;
+}
+
+.z {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: Arial, sans-serif !important;
+	font-style: italic;
+	font-size: 0.82rem;
+	position: absolute;
+}
+.w5{
+  	width: 5mm !important;
+	}
+		
+.w15{
+  	width: 15mm !important;
+	}
+	
+.w17{
+  	width: 17mm !important;
+	}
+	
+.w20{
+  	width: 20mm !important;
+	}
+	
+.w25{
+  	width: 25mm !important;
+	}
+	
+.w30{ 
+	width: 30mm !important;
+	}
+	
+.w35{ 
+	width: 35mm !important;
+	}
+	
+.w40{ 
+	width: 40mm !important;
+	}
+	
+.w45{ 
+	width: 45mm !important;
+	}
+	
+.w47{ 
+	width: 47mm !important;
+	}
+	
+.w50{ 
+	width: 50mm !important;
+	}
+	
+.w53{ 
+	width: 53mm !important;
+	}
+
+.w60{ 
+	width: 60mm !important;
+	}	
+	
+.w65{ 
+	width: 65mm !important;
+	}	
+	
+.w70{ 
+	width: 70mm !important;
+	}
+	
+.w75{ 
+	width: 75mm !important;
+	}
+	
+.w80{ 
+	width: 80mm !important;
+	}
+
+.w90{ 
+	width: 90mm !important;
+	}
+	
+.w95{ 
+	width: 95mm !important;
+	}
+	
+.w100{ 
+	width: 100mm !important;
+	}
+	
+.w105{ 
+	width: 105mm !important;
+	}
+	
+.w120{ 
+	width: 120mm !important;
+	}
+	
+.w130{ 
+	width: 130mm !important;
+	}
+	
+.w140{ 
+	width: 140mm !important;
+	}
+	
+.w145{ 
+	width: 145mm !important;
+	}
+	
+.w150{ 
+	width: 150mm !important;
+	}
+	
+.w155{ 
+	width: 150mm !important;
+	}
+	
+.w160{ 
+	width: 160mm !important;
+	}
+	
+.w165{ 
+	width: 165mm !important;
+	}
+	
+.w170{ 
+	width: 170mm !important;
+	}
+	
+.sredina{ 
+	text-align: center !important;
+	vertical-align: middle !important;
+	}
+	
+.prezimena{ 
+	font-style: oblique;
+	font-size: 1.2rem;
+	}
+
+.lh8{ 
+	 line-height: 8mm;
+	}
+	
+.lh9{ 
+	 line-height: 9mm;
+	}
+
+.lh8i5{ 
+	 line-height: 8.5mm;
+	}
+
+.div,.p{
+	position: relative;
+	font-family: Georgia;
+	font-size: 14px;	
+	}
+
+.p{ 
+	padding: 0;
+	margin: 0;
+	}
+
+.clanak{ 
+	text-align: justify;
+    text-justify: inter-word;
+	}

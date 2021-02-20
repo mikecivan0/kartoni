@@ -1,0 +1,1 @@
+ove slike moraju biti ovdje da ne izbacuje error u konzoli
