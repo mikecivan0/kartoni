@@ -126,7 +126,7 @@ class Pacijent extends SQL{
 		//traženje podataka pacijenta po term				
 		$izraz = $veza->prepare("select * from kartoni_osobe
 								 where concat(ime,' ',prezime) like :uvjet or concat(prezime,' ',ime) like :uvjet
-								 or mbo like :uvjet order by prezime, ime;");
+								 or mbo like :uvjet order by prezime, ime limit 50;");
 		
 		$uv="%" . mb_strtolower($term,'UTF-8') . "%";
 		$izraz->bindParam(':uvjet', $uv);
@@ -144,7 +144,7 @@ class Pacijent extends SQL{
 		//traženje podataka pacijenta koji nisu na listi za zvati
 		$izraz = $veza->prepare("select * from kartoni_osobe
 								 where (concat(ime,' ',prezime) like :uvjet or concat(prezime,' ',ime) like :uvjet)
-								 and id not in(select osoba_id from kartoni_listaZaZvati) order by prezime, ime;");
+								 and id not in(select osoba_id from kartoni_listaZaZvati) order by prezime, ime limit 50;");
 		
 		$uv="%" . mb_strtolower($term,'UTF-8') . "%";
 		$izraz->bindParam(':uvjet', $uv);
