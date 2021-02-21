@@ -32,12 +32,12 @@ class NeradniDan extends SQL{
 	public function update(){		
 		
 		$stariDatumi = 'neradniDani = array(' . $this->stariDatumi . ');';
-		$noviDatumi = trim($this->noviDatumi);
-		$noviDatumiTrimZarez = trim($noviDatumi,",");
+		$noviDatumi = str_replace(array('"',';'), '', trim($this->noviDatumi)); //izbaci razmake sa krajeva, dvostruke navodnike i točku-zarez
+		$noviDatumiTrimZarez = trim($noviDatumi,","); //izbaci zareze sa krajeva
 		
-		$noviDatumiBezRazmaka = str_replace(array(" ","  ","   "),"",$noviDatumiTrimZarez);
-		$noviDatumiSaNavodnicima = "'" . str_replace(",","','",$noviDatumiBezRazmaka) . "'";
-		$noviDatumiCijeliArray = 'neradniDani = array(' . $noviDatumiSaNavodnicima . ');';
+		$noviDatumiBezRazmaka = str_replace(array("'"," ","  ","   "),"",$noviDatumiTrimZarez); //izbaci jednostruke navodnike i višestruke razmake
+		$noviDatumiSaNavodnicima = "'" . str_replace(",","','",$noviDatumiBezRazmaka) . "'"; //dodaj jednostruke navodnike lijevo i desno od zareza i na početak i kraj stringa
+		$noviDatumiCijeliArray = 'neradniDani = array(' . $noviDatumiSaNavodnicima . ');'; //ubaci string u array
 		
 		$strTerapije = file_get_contents($this->path);		
 		$novo = str_replace($stariDatumi,$noviDatumiCijeliArray,$strTerapije);
