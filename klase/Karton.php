@@ -185,7 +185,7 @@ class Karton extends SQL{
 		$izraz = $veza->prepare("select distinct k.*,o.ime,o.prezime,o.godiste,o.mbo from kartoni_kartoni k inner join kartoni_osobe o on k.osoba_id=o.id
 								 left join kartoni_terapije t on t.karton_id=k.id
 								 where concat(o.ime,' ',o.prezime) like :uvjet or concat(o.prezime,' ',o.ime) like :uvjet
-								 or k.upis like :uvjet order by o.prezime, o.ime, length(k.upis), k.upis;");
+								 or k.upis like :uvjet order by o.prezime, o.ime, length(k.upis), k.upis limit 50;");
 		
 		$uv="%" . mb_strtolower($term,'UTF-8') . "%";
 		$izraz->bindParam(':uvjet', $uv);
