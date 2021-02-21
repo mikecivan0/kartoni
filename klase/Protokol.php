@@ -22,7 +22,8 @@ class Protokol extends SQL{
 		
 		$sadrzaj = file_get_contents($this->path);
 		$listaStarihBrojeva = $this->get_string_between($sadrzaj, 'nemaUProtokolu = array(', ');');
-		$listaNovihBrojeva = str_replace(",",", ",$listaStarihBrojeva);
+		$listaNovihBrojeva = str_replace(",",", ",$listaStarihBrojeva); //dodaj razmake iza zareza za ljepši prikaz
+		$listaNovihBrojeva = str_replace("'","",$listaNovihBrojeva); //izbaci navodnike
 		
 		$this->setStariBrojevi($listaStarihBrojeva);
 		$this->setNoviBrojevi($listaNovihBrojeva);
@@ -31,12 +32,13 @@ class Protokol extends SQL{
 
 	public function update(){		
 		
-		$stariBrojevi = 'nemaUProtokolu = array('. $this->stariBrojevi . ');';
-		$noviBrojevi = trim($this->noviBrojevi);
-		$noviBrojeviTrimZarez = trim($noviBrojevi,",");
+		$stariBrojevi = 'nemaUProtokolu = array(' . $this->stariBrojevi . ');';
+		$noviBrojevi = str_replace(array('"',';'), '', trim($this->noviBrojevi)); //izbaci razmake sa krajeva, dvostruke navodnike i točku-zarez
+		$noviBrojeviTrimZarez = trim($noviBrojevi,","); //izbaci navodnike sa krajeva
 		
-		$noviBrojeviBezRazmaka = str_replace(array(" ","  ","   "),"",$noviBrojeviTrimZarez);	
-		$noviBrojeviCijeliArray = 	'nemaUProtokolu = array('. $noviBrojeviBezRazmaka . ');';
+		$noviBrojeviBezRazmaka = str_replace(array("'"," ","  ","   "),"",$noviBrojeviTrimZarez); //izbaci jednostruke navodnike i višestruke razmake	
+		$noviBrojeviSaNavodnicima = "'" . str_replace(",","','",$noviBrojeviBezRazmaka) . "'"; //dodaj jednostruke navodnike lijevo i desno od zareza i na početak i kraj stringa
+		$noviBrojeviCijeliArray = 	'nemaUProtokolu = array('. $noviBrojeviSaNavodnicima . ');';
 		
 		$strFilter = file_get_contents($this->path);		
 		$novo = str_replace($stariBrojevi,$noviBrojeviCijeliArray,$strFilter);
