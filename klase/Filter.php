@@ -439,7 +439,7 @@ class Filter extends SQL{
 		$smallAttr = " style='font-size: 1rem;' class='show-for-small-only'";
 		$svi = array();
 		$nema = array();
-		$nemaUProtokolu = array(002);
+		$nemaUProtokolu = array('013','015','018','020','023','024','115','124','266','340','506','537','542','1040','1444','1605');
 		
 		if(!empty($kartoni)){
 			foreach($kartoni as $karton){
